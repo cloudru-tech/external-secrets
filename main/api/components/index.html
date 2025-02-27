@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../pictures/eso-round-logo.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
     
     
       
@@ -2234,6 +2234,8 @@
       
         
       
+        
+      
     
     
       
@@ -2632,6 +2634,28 @@
   
   <span class="md-ellipsis">
     GitLab Variables
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../provider/github/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Github Actions Secrets
     
   </span>
   
@@ -3665,7 +3689,7 @@
 <p>Exernal Secrets comes with three components: <code>Core Controller</code>, <code>Webhook</code> and <code>Cert Controller</code>.</p>
 <p>This is due to the need to implement conversion webhooks in order to convert custom resources between api versions and
 to provide a ValidatingWebhook for the <code>ExternalSecret</code> and <code>SecretStore</code> resources.</p>
-<p>These features are optional but highly recommended. You can disable them with helm chart values <code>certController.create=false</code> and <code>webhook.create=false</code>.</p>
+<p>These features are optional but highly recommended. You can disable them with helm chart values <code>certController.create=false</code>, <code>webhook.create=false</code> and <code>crds.conversion.enabled=false</code>.</p>
 <p><br/>
 <img alt="Component Overview" src="../../pictures/diagrams-component-overview.png" /></p>
 <h3 id="tls-bootstrap">TLS Bootstrap</h3>
